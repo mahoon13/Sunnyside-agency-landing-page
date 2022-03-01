@@ -1,0 +1,56 @@
+@media (max-width: 850px) {
+    .grid-box-4 {
+        grid-template-columns: unset !important;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "a""b""c""d";
+    }
+
+    .grid-box-2 {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #features .text-box {
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .learn-more-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 620px) {
+    #navbar .nav-ul {
+        display: none;
+    }
+
+    #navbar .navbar-toggle i {
+        display: block;
+    }
+
+    .footer-grid {
+        width: 100%;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-areas:
+            "a b"
+            "c d" !important;
+    }
+
+    #clients .users {
+        display: block;
+    }
+
+    #clients .user {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 464px) {
+    header {
+        background: url("../images/mobile/image-header.jpg") no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+}
